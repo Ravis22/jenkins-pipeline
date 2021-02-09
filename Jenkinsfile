@@ -18,7 +18,7 @@ agent any
         stage ('Deploy stage'){
             steps{
                 withMaven(maven: 'maven_3_6_3'){
-                     sh 'mvn deploy'
+                     sh 'mvn package'
                 }
             }
        }

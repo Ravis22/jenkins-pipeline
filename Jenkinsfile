@@ -7,6 +7,7 @@ agent any
                sh 'mvn clean compile'
                }
             }
+       }
     stage ('Testing stage'){
         steps{
          withMaven(maven: 'maven_3_6_3'){
